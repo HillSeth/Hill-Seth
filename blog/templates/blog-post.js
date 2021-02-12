@@ -8,6 +8,7 @@ const BlogPost = ({ data }) => {
     return (
         <Layout>
         <h1>{title}</h1>
+        <div dangerousSetInnerHTML={{__html: body.childMArkdownRemark.html}}></div>
         </Layout>
     );
 }
@@ -19,6 +20,11 @@ query blogPostQuery($slug: String!) {
     contentfulBLogPost(slug: {eq: $slug}) {
         title
         slug
+        body {
+            childMarkdownRemark {
+                html
+            }
+        }
     }
 }
 `

@@ -1,15 +1,27 @@
+require('dotnev').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby Blog`,
+    description: `ITDEV-164 Gatsby Blog.`,
+    author: `Mike Hunsicker`,
+    contact: {
+      name: `Seth Hill`,
+      company: `Blogs Inc.`,
+      address: `PO Box 1234`
+    }
   },
   plugins: [
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        name: `YOUR SPACE ID`,
-        accessToken: 'YOUR ACCESS TOKEN',
-      },
+        spaceId: `${process.env.SPACE_ID}`,
+        accessToken: `${process.env.ACCESS_TOKEN}`
+      }
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
