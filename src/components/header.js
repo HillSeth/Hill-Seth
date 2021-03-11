@@ -10,7 +10,7 @@ margin-bottom: 1.45rem;
 
 const Inner = styled.div`
 margin: 0px auto;
-max-width: 960px;
+max-width: 1000px;
 padding: 1.45rem 1.0875rem;
 `
 
@@ -19,10 +19,10 @@ margin: 0px;
 `
 
 const StyledLink = styled(Link)`
-color: white;
+color: gray;
 text-decoration: none;
 &:hover {
-  color: purple;
+  color: cyan;
 }
 `
 
