@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ul>
+    <List width={[1, 1 / 2, 2 / 3]} p={2}>
     {
       data.allContentfulBlogPost.edges.map(edge => (
         <li>
@@ -19,7 +19,7 @@ const IndexPage = () => (
         </li>
       ))
     }
-    </ul>
+    </List>
   </Layout>
 )
 
@@ -33,7 +33,7 @@ export const query = graphql`
         title
         slug
         heroImage {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 600) {
             src
           }
         }

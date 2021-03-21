@@ -46,4 +46,4 @@ Header.defaultProps = {
   sitTitle: ``,
 }
 
-export default Header
+export {Header}
