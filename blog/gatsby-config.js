@@ -4,9 +4,9 @@ require('dotnev').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Blog`,
+    title: `Five Blog`,
     description: `ITDEV-164 Gatsby Blog.`,
-    author: `Mike Hunsicker`,
+    author: `Seth Hill`,
     contact: {
       name: `Seth Hill`,
       company: `Blogs Inc.`,

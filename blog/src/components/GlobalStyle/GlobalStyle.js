@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     html {
-        font-family: sans-serif;
+        font-family: Times New Roman;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
     }
@@ -16,12 +16,12 @@ const GlobalStyle = createGlobalStyle`
     html {
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
-        font: 112.5%/1.45em georgia, serif, sans-serif;
+        font: 112.5%/1.45em georgia, serif, Times New Roman;
         box-sizing: border-box;
         overflow-y: scroll;
       }
       body {
-        margin: 0;
+        margin: 5;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: hsla(0, 0%, 0%, 0.8);
@@ -104,15 +104,15 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.1;
       }
       mark {
-        background-color: #ff0;
-        color: #000;
+        background-color: #fffff;
+        color: #111;
       }
       small {
-        font-size: 80%;
+        font-size: 75%;
       }
       sub,
       sup {
-        font-size: 75%;
+        font-size: 60%;
         line-height: 0;
         position: relative;
         vertical-align: baseline;
@@ -168,7 +168,7 @@ const GlobalStyle = createGlobalStyle`
         margin-bottom: calc(1.45rem - 1px);
         background: hsla(0, 0%, 0%, 0.2);
         border: none;
-        height: 1px;
+        height: 5px;
       }
       button,
       input,
@@ -209,7 +209,7 @@ const GlobalStyle = createGlobalStyle`
         outline: 1px dotted ButtonText;
       }
       fieldset {
-        border: 1px solid silver;
+        border: 1px solid orange;
         padding: 0.35em 0.625em 0.75em;
         margin-left: 0;
         margin-right: 0;
@@ -274,7 +274,7 @@ const GlobalStyle = createGlobalStyle`
         padding-right: 0;
         padding-top: 0;
         margin-bottom: 1.45rem;
-        color: inherit;
+        color: black;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-weight: bold;
@@ -308,7 +308,7 @@ const GlobalStyle = createGlobalStyle`
         padding-right: 0;
         padding-top: 0;
         margin-bottom: 1.45rem;
-        color: inherit;
+        color: red;
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
           Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         font-weight: bold;

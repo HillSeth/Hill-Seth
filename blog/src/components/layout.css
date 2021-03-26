@@ -1,7 +1,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font: 112.5%/1.45em arial, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -10,7 +10,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: arial, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -59,7 +59,7 @@ a:hover {
   outline-width: 0;
 }
 abbr[title] {
-  border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
+  border-bottom: 2px dotted hsla(0, 0%, 0%, 0.5);
   cursor: help;
   text-decoration: none;
 }
@@ -89,11 +89,11 @@ h1 {
   line-height: 1.1;
 }
 mark {
-  background-color: #ff0;
-  color: #000;
+  background-color: rgb(160, 72, 72);
+  color: rgb(5, 29, 3);
 }
 small {
-  font-size: 80%;
+  font-size: 85%;
 }
 sub,
 sup {
