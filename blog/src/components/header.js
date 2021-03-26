@@ -15,7 +15,7 @@ margin: 0px auto;
 max-width: 1000px;
 padding: 1.45rem 1.0875rem;
 `
-
+//d
 /*const H1 = styled.h1`
 margin: 0px;
 `*/
