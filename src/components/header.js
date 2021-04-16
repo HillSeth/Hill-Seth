@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from 'styled-components'
+import { H1 } from '../Heading'
+import { Section } from '../Section'
 
 const Outer = styled.header`
 background: ${props => props.theme.header.backgroundColor};
@@ -13,10 +15,10 @@ margin: 0px auto;
 max-width: 1000px;
 padding: 1.45rem 1.0875rem;
 `
-
-const H1 = styled.h1`
+//d
+/*const H1 = styled.h1`
 margin: 0px;
-`
+`*/
 
 const StyledLink = styled(Link)`
 color: gray;
@@ -25,15 +27,21 @@ text-decoration: none;
   color: cyan;
 }
 `
-
 const Header = ({ siteTitle }) => (
   <Outer>
     <Inner>
-      <H1>
-        <StyledLink to="/">
-          {sitTitle}
-        </StyledLink>
-      </H1>
+      <Section flex>
+        <Section width={11/>12}>
+          <H1>
+            <StyledLink to="/">
+              {siteTitle}
+            </StyledLink>
+          </H1>
+        </Section>
+        <Section width={1/>12}>
+          Search
+        </Section>
+      </Section>
     </Inner>
   </Outer>
 )
